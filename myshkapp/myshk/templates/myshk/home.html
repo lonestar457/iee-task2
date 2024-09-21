@@ -1,8 +1,18 @@
 {%extends "myshk/base.html"%}
 {%block content%}
+<h3><a href="{% url 'ticket_details' %}">Ticket details</a></h3>
+<h3><a  href="{% url 'create_ticket' %}">Create ticket</a></h3>
+<h3><a href="{% url 'all_tickets' %}">All tickets</a></h3>
+<h3><a href="{% url 'ticket_queue' %}">Ticket queue</a></h3>
+<h3><a href="{% url 'accept_ticket' %}">Accept ticket</a></h3>
+<h3><a href="{% url 'close_ticket' %}">Close ticket</a></h3>
+<h3><a href="{% url 'workspace' %}"> Workspace</a></h3>
+<h3><a href="{% url 'update_ticket' %}">Update ticket</a></h3>
+
     {% for movie in movies%}
         <h1>Movie: {{movie.name}}</h1>
         <p>summary: {{movie.story}}</p>
         <p>Date: {{movie.date}}</p>
     {%endfor%}
+
     {%endblock content%}

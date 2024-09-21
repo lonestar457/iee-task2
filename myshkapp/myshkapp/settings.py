@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myshk.apps.MyshkConfig',
     'users.apps.UsersConfig',
-    'crispy_forms',
+    'tickets.apps.TicketsConfig'
     ]
 
 MIDDLEWARE = [
